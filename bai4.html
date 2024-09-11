@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table {
+            width: 600px;
+            border: 1px solid white;
+            border-collapse: collapse;
+        }
+        
+        #tb th,
+        #tb td {
+            border: 1px solid black;
+            padding: 5px;
+            text-align: center;
+        }
+        
+        #tb tr {
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>New Product</h1>
+    <hr/>
+    <form name="frm">
+        <p>
+            <label>
+                Product name:
+                <input type="text" name="pn" id="pn">
+            </label>
+            <label>
+                Quantity: 
+                <input type="text" name="qty" id="qty">
+            </label>
+        </p>
+        <p>
+            <label>
+                Unit price: 
+                <input type="text" name="up" id="up">
+            </label>
+
+            <label>
+                Discount: 
+                <input type="text" name="dc" id="dc">
+            </label>
+        </p>
+        <p>
+            <button type="button" onclick="sell()">Sell</button>
+            <button type="button" onclick="cancelForm()">Cancel</button>
+        </p>
+    </form>
+    <table id="tb">
+        <tr>
+            <th>ID</th>
+            <th>Product name</th>
+            <th>Quantity</th>
+            <th>Unit price</th>
+            <th>Discount</th>
+            <th>Subtotal</th>
+        </tr>
+    </table>
+    <script src="bai4.js">
+    </script>
+
+</body>
+
+</html>
